@@ -58,8 +58,8 @@ font-family: 'Overpass Mono', 'Cutive Mono', 'Anonymous Pro', monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 
-        2px 2px 0px var(--accent-primary),
-        4px 4px 0px var(--accent-secondary);
+        2px 0px 0px var(--accent-primary),
+        2px 0px 0px var(--accent-secondary);
 }
 
 .pixel-btn {
@@ -167,7 +167,7 @@ font-family: 'Overpass Mono', 'Cutive Mono', 'Anonymous Pro', monospace;
     display: flex;
     list-style: none;
     gap: 30px;
-    margin-right: 40px;
+    margin-right: 5rem;
 }
 
 .pixel-link {

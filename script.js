@@ -8,8 +8,8 @@ const projectData = {
         title: "BUPIT",
         description: "BUPIT is a USA-based luggage shipment platform built with Laravel and Vue.js. It allows users to schedule one-way, round-trip, or return shipments of personal luggage across locations in the United States. The system offers intelligent location-based search, displays available shipment dates, and provides live tracking after booking. A printable shipping label is automatically generated for each booking.",
         images: [
-            "/assets/img/bupit/2nd.png",
-            "/assets/img/bupit/3rd.png",
+            "assets/img/bupit/2nd.png",
+            "assets/img/bupit/3rd.png",
         ],
         technologies: ["Laravel", "Vue.js", "MySQL", "Stripe API", "Tailwind CSS", "JavaScript"],
         features: [
@@ -28,10 +28,10 @@ const projectData = {
         title: "ArtSticketing",
         description: "An innovative event ticketing platform with real-time seat selection, dynamic pricing, and comprehensive event management capabilities.",
         images: [
-            "/assets/img/artticketing/Screenshot_2.png",
-            "/assets/img/artticketing/Screenshot_3.png",
-            "/assets/img/artticketing/Screenshot_4.png",
-            "/assets/img/artticketing/Screenshot_6.png",
+            "assets/img/artticketing/Screenshot_2.png",
+            "assets/img/artticketing/Screenshot_3.png",
+            "assets/img/artticketing/Screenshot_4.png",
+            "assets/img/artticketing/Screenshot_6.png",
         ],
         technologies: ["PHP", "JavaScript", "MySQL", "Stripe API", "PayPal API", "Google Maps API"],
         features: [
@@ -48,9 +48,9 @@ const projectData = {
         title: "Bundini",
         description: "Bundini is a community-based social networking platform designed to analyze user behavior and promote healthier digital habits, especially among youth. Built with Laravel and Vue.js, it empowers users to create their own organizations, manage projects, and host events. Each event can have participants, feedback surveys, and real-time engagement tracking, helping communities foster positive behavior change through structured social interaction.",
         images: [
-            "/assets/img/bundini/Screenshot_2.png",
-            "/assets/img/bundini/Screenshot_3.png",
-            "/assets/img/bundini/Screenshot_4.png",
+            "assets/img/bundini/Screenshot_2.png",
+            "assets/img/bundini/Screenshot_3.png",
+            "assets/img/bundini/Screenshot_4.png",
         ],
         technologies: ["Laravel", "Tailwind CSS", "MySQL", "Vue.js", "Google People API"],
         features: [
