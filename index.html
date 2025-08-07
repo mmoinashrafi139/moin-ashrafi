@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moin Ashrafi - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="pixel-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="pixel-text">MA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="pixel-link">Home</a></li>
+                <li><a href="#about" class="pixel-link">About</a></li>
+                <li><a href="#skills" class="pixel-link">Skills</a></li>
+                <li><a href="#projects" class="pixel-link">Projects</a></li>
+                <li><a href="#contact" class="pixel-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="pixel-loader">
+            <div class="loader-text">LOADING...</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="pixel-background"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="/assets/img/profile_pic.png" alt="Moin Ashrafi" class="profile-img">
+                <div class="pixel-border"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="pixel-title">
+                    <span class="glitch-text">MOIN ASHRAFI</span>
+                </h1>
+                <h2 class="pixel-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">
+                    Crafting digital experiences with 3+ years of expertise in Laravel, Vue.js, and modern web technologies
+                </p>
+                <div class="hero-buttons">
+                    <button class="pixel-btn primary" id="resumeBtn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                    <button class="pixel-btn secondary">
+                        <a href="#contact" class="pixel-link"><i class="fas fa-eye"></i> View Projects</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="pixel-cube"></div>
+            <div class="pixel-cube"></div>
+            <div class="pixel-cube"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="pixel-description">
+                        I'm a passionate Full Stack Developer with 3+ years of experience building scalable web applications. 
+                        I specialize in creating pixel-perfect user interfaces and robust backend systems that deliver exceptional user experiences.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://pixabay.com/get/g84d5094a2fe6452c968b5342531fd06f5e863c6ae7a78d46ba680dfb91859fd131d69786f4795afe1d6779cdc82c205123c7e93360842278636e4a62e8ec4c42_1280.jpg" alt="Retro Setup" class="retro-setup">
+                    <div class="pixel-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">TECH STACK</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wind"></i>
+                            <span>Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">APIs & Services</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-stripe"></i>
+                            <span>Stripe</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-paypal"></i>
+                            <span>PayPal</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>EasyShip</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">FEATURED PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="bupit">
+                    <div class="project-image">
+                        <img src="/assets/img/bupit/main.png" alt="BUPIT Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BUPIT</h3>
+                        <p class="project-summary">USA-based, reliable luggage shipment service</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Tailwindcss</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="artsticketing">
+                    <div class="project-image">
+                        <img src="/assets/img/artticketing/Screenshot_1.png" alt="ArtSticketing Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ArtSticketing</h3>
+                        <p class="project-summary">Event ticketing system with real-time seat selection</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vuejjs</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Paypal</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="bundini">
+                    <div class="project-image">
+                        <img src="/assets/img/bundini/Screenshot_1.png" alt="Bundini Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Bundini</h3>
+                        <p class="project-summary">Social networking platform with Community Behaviour analytics</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vuejs</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title pixel-text">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>moinashrafi136@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 3494291920</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Remote / Available Worldwide</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/mmoinashrafi139/" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/moin-ashrafi-5b7b832b4/" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Moin Ashrafi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
